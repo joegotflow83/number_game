@@ -160,6 +160,8 @@ def answers_file(all_guesses):
 
 	with open('computer_guesses.txt', 'w') as f:
 
+		f.write("These were the computer guesses: \n")
+
 		for guess in all_guesses:
 
 			f.write(str(guess) + ' ')
